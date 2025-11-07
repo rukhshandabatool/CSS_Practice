@@ -1,0 +1,321 @@
+/* --------------- Color and Background-color Property Start ----------------- */
+h4{
+    color:rgb(0, 255, 0);
+}
+
+p{
+    color:rgb(74, 231, 108);
+}
+
+/* # It will change the color of the text using color property and color of button-backround using color
+  background property. */
+button{
+    color:rgb(34, 201, 34);
+    background-color: white;
+}
+
+/* # It will set the background color of the full website. */
+body{
+    background-color:#ffff00;
+}
+
+/* 
+IN CSS IF WE REDEFINE ANY PROPERTY FOR ANY SELECTOR OR TAG IN HTML THEN, CSS WILL PRIORITIZE WHAT WE
+DEFINE LATER AND WILL IGNORE THE EARLIER ONE.
+*/
+
+/* --------------- Selectors Start ----------------- */
+/* Implementing selectors */
+/* class selector */
+.class1{
+    color:rgb(12, 170, 170);
+}
+ 
+/* Universal selector is used to implement any property on the full webpage like; same font throughout 
+website*/
+*{
+    color:blueviolet;
+}
+
+/* id selector */
+#mainheading{
+    color:blueviolet;
+}
+
+/* ----------------- First Assignment practice test ------------------  */
+/* 1 */
+div{
+    background-color:blue;
+}
+
+/* 2 */
+/* Use class name not just "class" keyword in this case "heading" */
+.heading{
+    color:red;
+}
+/* or we can just use heading names instead of class name but more practical is class name*/
+h1,h2,h3{
+    color:red;
+}
+
+/* 3 */
+button{
+    background-color: green;
+}
+
+/* Finish */
+
+/* --------------- Text Properties Start ----------------- */
+/* 1- Learning text-allignment */
+p{
+    /* text-align : right; */
+    /* Text by default will always be on left aligned but we can still use css code for that */
+    text-align : center;
+}
+
+h1, h3{
+    /* text-align: right; */
+    text-align: center;
+    /* Now the Main_Heading text is center aligned */
+
+    /* Setting color of both headings to bluevoilet but, if we want to give them different colors we can 
+    give them separatly means h1{} separate and h3{} separate */
+    color:blueviolet;
+}
+ /* There's a new modification in CSS3 according to which;
+ -  The left in left alligment is equal to :start which means, we can write start instead of :left
+ -  and, end instead if right  */
+p{
+    /* text-align : right; */
+    /* Text by default will always be on left aligned but we can still use css code for that */
+    /* text-align : start; */
+    text-align : end;
+    /* now the text will start from the right side  */
+}
+
+h1, h3{
+    /* text-align: right; */
+    text-align: start;
+    /* Now the Main_Heading text is center aligned */
+
+    /* Setting color of both headings to bluevoilet but, if we want to give them different colors we can 
+    give them separatly means h1{} separate and h3{} separate */
+    color:blueviolet;
+}
+
+/* 2- Text Decoration */
+p{
+    /* Text decoration to define the importance and meaning of the text */
+    text-decoration: overline;
+    /* text-decoration: line-through; */
+    /* text-decoration: underline */
+}
+
+h1, h3{
+    text-align: center;
+    text-decoration: underline;
+    /* Now the Main_Heading text is center aligned  and, will be underlined */
+
+    /* Setting color of both headings to bluevoilet but, if we want to give them different colors we can 
+    give them separatly means h1{} separate and h3{} separate */
+    color:blueviolet;
+}
+/* In order to remove the default underline under the ancher tag link the we created we can use CSS ::-webkit-search-decoration
+property :none */
+/* What will happen? 
+                By default underline in the link will be removed 
+                And, it will show that we don't need under, over or through line just none
+*/
+a{
+    text-decoration: none;
+}
+/* We can also set the color of the underline  */
+a{
+    text-decoration: red underline;
+}
+/* Now what will happen the color of the underline will be red we can set any color along with the decor we want */
+
+/* We can also set the style of the underline  */
+a{
+    text-decoration: red wavy underline;
+}    /*  Underline will be wavy */
+/* a{
+    text-decoration: red dashed underline;    for dashed underline
+}
+a{
+    text-decoration: red double underline;    for double uderline
+}
+a{
+    text-decoration: red dotted underline;    for dotted underline
+}
+a{
+    text-decoration: red solid underline;     for solid underline
+} */
+
+
+/* 2- Font wights Start */
+p{
+    /* font-weight: bold; */
+    /* font-weight: bolder; */
+    /* font-weight: lighter; */
+    font-weight: 100;   /* Limit of setting the weight means thickness is in b/w 100 - 900 */
+    
+}
+
+h1, h3{
+    /* font-weight: lighter; */
+    /* font-weight: bold; */
+    /* font-weight: bolder; */
+    font-weight: 900;
+
+
+    /* Setting color of both headings to bluevoilet but, if we want to give them different colors we can 
+    give them separatly means h1{} separate and h3{} separate */
+    color:blueviolet;
+
+    /* Align text to center and under the text */
+    text-align: center;
+    text-decoration: underline;
+    /* Now the Main_Heading text is center aligned  and, will be underlined */
+}
+
+
+/* 4- Font-family Start */
+body{
+    background-color: #dbc8db;
+}
+
+h1, h3{
+    color:blueviolet;
+}
+
+p{
+    color:blueviolet
+}
+/* Setting the font style of the two paragraphs with id "one" & "two" */
+#one{
+    font-family: sans-serif;
+}
+
+#two{
+    font-family: fantasy;
+}
+
+/* We can also give multiple fonts familie bcz;
+- multiple browser support multiple different fonts, and different people open webiste at different browsers
+  e.g; safari, chrome, firefox etc... all these browsers support different font.
+- so, what it means of giving multiple fonts it means that give first priority to first font if it doesn't exsist
+  on the visitors browser then, apply the 2nd one and if even 3rd one doesn't exsist move to the 4th one and so on up to the
+  last font given in the CSS code. */
+/* Example */
+#one{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+} 
+/* Now what happen is i open this in the brwser and my browser do support the first font..... This case is used for
+the browsers that doesn't support some specific fonts */
+/********** This mechanism is called "fallback mechanism" ***********/
+
+
+/* 4- Font-family Start */
+body{
+    background-color: #dbc8db;
+}
+
+h1, h2, h3{
+    color:blueviolet;
+}
+
+/* Different sizes of font-size like;
+   - Large, Larger, x-large, xx-large
+   - Small, Smaller, x-small, xx-small
+   - Medium
+we can set size in "pixels --> px" like; 10px, 50px etc. */
+
+/* 
+    - 96px = 1inch  <--- which means one px is a very small part of our screen 
+    - One pixel is so small that if we zoom-in our screen to the maximum 500 then it will be shown very small.
+    - Setting the pixels size also represent the important of the text on the webite.
+*/
+h1{
+    font-size: xx-large;
+}
+/* h1{
+    font-size: medium;
+} */
+h2{
+    font-size: 20px;
+}
+h3{
+    font-size: 10px;
+}
+/* What happen's is the size of h1 will be the maximum means full large size, h2 will be 20px which is smaller
+than h1 heading, and h3 will be way more smaller than bothe h1 and h2 headings */
+
+
+/* 5- Line height Start */
+body{
+    background-color: #dbc8db;
+}
+
+p{
+    color:blueviolet;
+}
+#line_height{
+    font-size: 20px;
+    /* line-height: 1px; */
+       /* - 1 or two pixels means very small distance between two line and they will overlap bcz, it is this 
+        small */
+    /* But, if i increase it up to 20 then there will be some distance between the lines */
+    line-height: 20px;
+}
+
+
+/* 4- Text Transform */
+h1{
+    color:rgb(116, 15, 211);
+    text-transform:uppercase;
+    /* text-transform:lowercase; */
+}
+#transform{
+    color:blueviolet;
+    font-size: 20;
+    /* text-transform:uppercase; */
+    /* text-transform:lowercase; */
+    text-transform:capitalize; 
+        /* Capitalize will capital the intials of every single word. */
+    /* text-transform:none;  */
+        /* None will make invalid commands we run before like upper and lower case and normal text will be returned.*/
+} 
+
+
+/* ------------------ PRACTICE ASSIGNMENT 2 ------------------ */
+
+/* 1- Set the font family of all the content in the document to "Times New Roman" */
+*{
+    font-family: 'Times New Roman';
+}
+
+/* 2- Create heading at the center of the page with all of its text capitalized by default */
+h1{
+    text-align: center;
+    text-transform: capitalize;
+        /* It will make text by default capitalize means every single word first intial will be capital. */
+}
+
+/* 3- Create one div inside another div
+ - Set and id&text "outer" for the first one & "inner" for the 2nd one
+ - Set the outer div text size to 25px and inner div text size to 10px */
+#outer{
+    font-size: 25px;
+}
+
+#inner{
+    font-size: 10px;
+}
+/* Lets say i only set the font-size for outer 
+- here outer div is parent and inner div is child
+- so, all the properties applied on the outer will automatically applied on the inner unless set manually */
+#outer{
+    font-size: 25px;
+} 
+/* <--- Like this */
