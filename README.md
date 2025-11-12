@@ -6,7 +6,7 @@ Each level represents a separate stage of progress — from beginner fundamental
 I’m continuously learning and plan to expand this repository with more practice levels and mini styling challenges to track my growth over time.
 
 ## 📂 Folder Structure
-#🟢 Level 1 — CSS Basics
+# 🟢 Level 1 — CSS Basics
 
 🎯 Focus: Fundamental CSS concepts including:
 
