@@ -1,0 +1,52 @@
+ /* ------------------ Practice Assignment 4 ------------------  */
+        /* 1- create a webpage layout with a header, a footer and content area containing three divs
+         - Set the height & width of the divs to 100px
+          add the previous navbar in the header  */
+        /* 2- Add borders to all the divs */
+        /* 3- Add a background color to each div with opacity of 0.5 */
+            /* In this case adding using inline style */
+        /* 4- Give appropiriate heigt to content area */
+* {
+    padding : 0;
+    margin : 0;
+    color:white;
+    /* text-align: center; */
+}
+
+#navbar{
+    height:60px;
+    background-color: #0f1111;
+}
+
+button{
+    background-color:#f08804;
+    color:white;
+}
+
+#logo {
+    color:#f08804;
+    font-size: 25px;
+}
+
+a {
+    margin-right: 200px;
+    text-decoration: none;
+}
+
+input{
+    color: #0f1111;
+}
+
+.contentarea{
+    height: 508px;
+    width: 443px;
+    /* background-color: #f08804; */
+    border: 2px solid black;
+    display: inline-block;
+}
+
+footer{
+    background-color: #0f1111;
+    text-align:center;
+}
+
