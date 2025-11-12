@@ -1,4 +1,4 @@
-🌐 CSS Practice Projects
+🌐 CSS Practice 
 
 This repository contains my CSS practice files, exercises, and assignments created as part of my web development learning journey.
 Each level represents a separate stage of progress — from beginner fundamentals to intermediate styling techniques — designed to strengthen my understanding of CSS properties, selectors, and layout systems.
