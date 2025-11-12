@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> CSS Level 2 </title>
+    <link rel="stylesheet" href="style.css" >
+</head>
+<body>
+    <!-- ------------------ 1- BOX MODEL IN CSS ------------------ -->
+        <!-- Box model describbe the height, width, padding, boarder and margin(the distance between two boxes)
+        - height is the vertical area that any object in css will cover
+        - width is the horizintal area that any object will cover like headings, div, paragraoh etc.
+        - padding is the area which is kept around the text so nothing else will come in that area.
+        - margin will be the area that we will kept between two boxes -->
+
+    <!--  BOX MODEL VISUALIZATION
+
+    -------------------------------              -------------------------------
+    |                             |              |                             |
+    |           Width             |              |                             |
+    |    ---------------------    |              |    ---------------------    |
+    | H  |                   |    |              |    |                   |    |
+    | e  |                   |    |              |    |                   |    |
+    | i  |                   |    | <- Margin -> |    |                   |    |
+    | g  |                   |    |              |    |                   |    |
+    | h  |                   |    |              |    |                   |    |
+    | t  ---------------------    |              |    ---------------------    |
+    |           Padding           |              |                             |
+    |                             |              |                             |
+    -------------------------------              -------------------------------
+               Boarder
+
+    -->
+
+    <h1> Heading </h1>
+    <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta ea totam, perferendis explicabo ipsum fugiat harum at aliquam omnis sapiente consectetur, veniam non id repudiandae molestias? Quo, dolores assumenda. Molestias?
+        Expedita aspernatur atque, harum rem perferendis voluptates? 
+    </p>
+    <button> CLick me! </button>
+    <br><br>
+    
+    <div>
+        Actually, I am a DIV1.
+    </div>
+    <br>
+    <div>
+        Actually, I am a DIV2.
+    </div>
+    <br>
+    <div>
+        Actually, I am a DIV3.
+    </div>
+
+
+    <!-- ----------------- Practice set 3 ----------------- -->
+        <!-- 1- Create a div with height and width of 100px
+         - Set its background color to green and border radius to 50% -->
+        <div>
+            I am DIV.
+        </div>
+
+        <!-- 2- Create Navigation bar  -->
+         <div id="navbar">
+            <a id="logo"> amazon.in </a>
+            <a href="##"> Account </a>
+            <a href="##"> My Cart </a>
+            <a href="#"> Contact Us </a>
+        
+            <input type="search" placeholder ="search amazon.in">
+            <button> search </button>
+        </div>
+
+    <!-- --------------------- Display property --------------------- -->
+     <h1> Display Property </h1>
+     <div id="di1"> Div1 </div>
+     <div id="di2"> Div2 </div>
+     <div id="di3"> Div3 </div>
+    
+
+    <!-- ------------------- Alpha Channel ------------------- -->
+        <!-- We have studied RGB in level one now we are learning RGBA
+        - R means red
+        - G means green
+        - B means blue
+        - A means Alpha (which is used to set the opacity of the color.... range between 0,0.1,....,1)
+            - 0 means no color 0 opacity 
+            - 1 means full dark color shade
+            - range in between will set the different shades of selected colors -->
+        <div id="red"> RGBA1 </div>
+        <div id="green"> RGBA2 </div>
+        <div id="blue"> RGBA2 </div>
+
+    
+    <!-- ------------------ Practice Assignment 4 ------------------ -->
+        <!-- 1- create a webpage layout with a header, a footer and content area containing three divs
+         - Set the height & width of the divs to 100px
+          add the previous navbar in the header -->
+        <!-- 2- Add borders to all the divs -->
+        <!-- 3- Add a background color to each div with opacity of 0.5 -->
+        <!-- 4- Give appropiriate heigt to content area  -->
+        <header>
+            <!-- 2- Create Navigation bar  -->
+            <div id="navbar">
+                <a id="logo" href="#"> amazon.in </a>
+                <a href="##"> Account </a>
+                <a href="##"> My Cart </a>
+                <a href="#"> Contact Us </a>
+                <input type="search" placeholder ="search amazon.in">
+                <button> search </button>
+            </div>
+        </header>
+        
+        <div id="content">
+            <div class="contentarea" style="background-color: rgba(255, 0, 0, 0.5);"> Buy your favourite dress &#x2764; </div>
+            <div class="contentarea" style="background-color: rgba(0, 255, 0, 0.5);"> Buy your favourite food &#x2764; </div>
+            <div class="contentarea" style="background-color: rgba(0, 0, 255, 0.5);"> Rent your favourite movie &#x2764; </div>
+        </div>
+        
+        <footer>
+            Made with &hearts; by Amazon
+            <br>
+            &#169; 1996-2025, Amazon.com, Inc. or its affiliates 
+        </footer>
+</body>
+</html>
