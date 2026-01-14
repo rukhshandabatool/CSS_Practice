@@ -62,5 +62,5 @@ Each level represents my hands-on journey — learning, implementing, and experi
 
 🌐 Credit
 
-2025 | RUKHSHANDA BATOOL 💻
+©2025 | RUKHSHANDA BATOOL 💻
 A personal learning repository showcasing my growth in CSS — from fundamental styling to creative web layouts.
